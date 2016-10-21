@@ -1,0 +1,233 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Table of Contents
+
+// Options
+// Colors
+// Body
+// Link
+// Typography
+// Components
+
+
+// OPTIONS
+//
+$bootstrap-sass-asset-helper: false !default;
+
+// COLORS
+//
+// -- Primary Color
+$primary-color              : #9fa73c !default; // lime green
+$secondary-color            : #1c9385 !default; // green
+$base-color                 : #ffffff !default;
+$base-alt-color             : darken($base-color, 5%) !default;
+$light-color                : #ffffff !default;
+$dark-color                 : #000000 !default;
+
+// -- Base Color
+$red                        : #ff0000 !default;
+$green                      : #00ff00 !default;
+$blue                       : #0000ff !default;
+
+// -- BS Default
+$gray-dark                  : #373a3c !default;
+$gray                       : #55595c !default;
+$gray-light                 : #818a91 !default;
+$gray-lighter               : #eceeef !default;
+$gray-lightest              : #f7f7f9 !default;
+
+$brand-primary              : $primary-color !default;
+$brand-secondary            : $secondary-color !default;
+$brand-success              : #5cb85c !default;
+$brand-info                 : #5bc0de !default;
+$brand-warning              : #f0ad4e !default;
+$brand-danger               : #d9534f !default;
+
+$contrasted-dark-default    : $gray-dark !default; // dark - textcolor ($body-color)
+$contrasted-light-default   : $gray-lightest !default; // light - textcolor ($body-color)
+
+// BODY
+//
+//$body-bg                    : $gray-lightest !default;
+$body-bg                    : #263238 !default;
+$body-color                 : $gray-dark !default; // BS4
+$text-color                 : $gray-lightest !default;
+$heading-color              : #1d2939 !default;
+
+// LINK
+//
+$link-color                 : $secondary-color !default;
+$link-hover-color           : darken($link-color, 15%) !default;
+$link-hover-decoration      : none !default;
+
+// Typography
+//
+$font-openSans              : 'OpenSans-Regular', san-serif !default;
+$font-openSans-light        : 'OpenSans-Light', san-serif !default;
+$font-raleway-bold          : 'Raleway-Bold', san-serif !default;
+$icon-font                  : 'icomoon' !default;
+
+$font-family-base           : $font-openSans-light !default;
+
+// COMPONENTS
+//
+$border-color               : #ddd !default;
+
+$component-active-color     : $light-color !default;
+$component-active-bg        : $brand-primary !default;
+
+$border-radius-base         : 4px !default;
+$border-radius-large        : 4px !default;
+$border-radius-small        : 4px !default;
+
+// Card
+$card-padding               : 20px !default;
+
+// Button
+$btn-default-color          : $light-color !default;
+$btn-default-bg             : $gray-dark !default;
+$btn-default-border         : darken($btn-default-bg, 5%) !default;
+
+$btn-secondary-color        : #fff !default;
+$btn-secondary-bg           : $brand-secondary !default;
+$btn-secondary-border       : darken($btn-secondary-bg, 5%) !default;
+
+$btn-bordered-color         : $secondary-color !default;
+$btn-bordered-bg            : transparent !default;
+$btn-bordered-border        : darken($secondary-color, 5%) !default;
+
+// Forms
+$input-border-radius        : 0 !default; // $border-radius-base
+$input-border-radius-large  : 0 !default; // $border-radius-large
+$input-border-radius-small  : 0 !default; // $border-radius-small
+
+$input-border-focus         : $primary-color !default;
+$input-color-placeholder    : #999 !default;
+
+$custom-select-indicator    : url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAJ1BMVEVHcEwck4Uck4Uck4Uck4Uck4Uck4Uck4Uck4Uck4Uck4Uck4Uck4WJ/Km2AAAADHRSTlMAM+4RmcxmelXduyIh538jAAAAkElEQVR4XuWOsQ3CQBAE34AQIfoOyB2QGFIKcEZKQAEE7w4o5NugAWSMhKYoZJ+5dQ1mk5u7m2DD/2RzD8pxb/PW6ba8nIe5hqsfK16DuoBOIqQeilJqBa1RhLdRkeE0YvnD6KJYXy329DygtV+aVu7V6N28yuegalKzRKlIlOqisoLndmSlZucsVeIkTZhvvsMZQ1umzH4/AAAAAElFTkSuQmCC') !default;
+$custom-select-indicator-2x : url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQBAMAAAB8P++eAAAAIVBMVEVHcEwck4Uck4Uck4Uck4Uck4Uck4Uck4Uck4Uck4Uck4WeNwNAAAAACnRSTlMA7jNmmRHPu3dVmcMzAgAAAMdJREFUeF7t0jEKwkAQheFBFaxTWplGW22trK0sRE+QxsraU+gRQiTIO6VFII/JLLwLzN9lh/0gu2tZlmW7ixW7b8w1WzdWavmozFWjL5I3tJ58AU0RBJ5u5QqSDsR3snwm6cGT+RYkPcgvkpVNj4KgIyc/aDXBQAqQpABJSpBkBGPHgSS4t3JzoB1nB6AzFsiOm0qgn3KPIAXIuQBJKpBkBGMf4GcroH1bKL6E4TJFNdDzLgVJUJAEBUlQkAQFOYC6rQOzLMv+u3RmK+X2JRYAAAAASUVORK5CYII=') !default;
+
+$nav-tab-next-indicator     : url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAABACAMAAADCiszgAAAAtFBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgD88QAAAAPHRSTlMAEiXQ6Bsx6wcC5DgBK94WC4kE1rNIRqGYD5DDgHJXDmes2oS8lGKoXbmbyFpuy+HAUmpNQqQhd3ofPz71+xAkAAAAy0lEQVR4Xo3UVRKDMBSFYTxBg9eVttTdu/99dQP/DPD4TQbIlaOVUoMnf5N+xJP4lZOm2YX4e4qJOwmpEiHxdBCAursVHXYsnbi/JZ14PvHYTIk3I1JD2MTDGamcF8RlJInritQWBvFhQeqae2Lf6xF3l6S65RCvjy5ocL7S4VAo4uRBGkd34lsmWfkN/DX+M74F35irw5XkqnOHuJvNna8rniiePp5UnmreAN4W3izeQt5Y3u7mJFBW2DZhfpBGnFyccpyInJ6FBPwDz5sPiEPfXcAAAAAASUVORK5CYII=') !default;
+
+// Inverted navbar
+$navbar-inverse-color       : $light-color !default;
+$navbar-inverse-bg          : $heading-color !default; // #1d2939
+$navbar-inverse-border      : darken($navbar-inverse-bg, 10%) !default;
+$navbar-inverse-active-bg   : #141d28 !default;
+
+// Form States and Alerts
+$state-secondary-text       : #1caf9a !default;
+$state-secondary-bg         : #ddfffa !default;
+$state-secondary-border     : darken(adjust-hue($state-secondary-bg, -10), 5%) !default;
+
+$alert-secondary-bg         : $state-secondary-bg !default;
+$alert-secondary-text       : $state-secondary-text !default;
+$alert-secondary-border     : $state-secondary-border !default;
+
+//
+// FOOTER
+$footer-bg                  : #1d2939 !default;
+$footer-color               : $contrasted-light-default !default;
+$footer-social-color        : #ee6456 !default;
+
+
+// Application Variables
+//
+$profile-navigation-height    : 55px !default;
+$profile-name-font-size       : 36px;
+$profile-white-transparent-bg : rgba(255, 255, 255, 0.9);
+$profile-icon-height          : 30px;
+$profile-icon-width           : 30px;
+$profile-default-border-color : #d2d2d2;
+$profile-dirty-white-bg       : #fafafa;
+
+
+// -- CUSTOM FORMS
+$border-width: 1px !default;
+$border-radius: 4px !default;
+$input-color: $gray !default;
+$cursor-disabled: not-allowed !default;
+$input-btn-border-width: $border-width !default; // For form controls and buttons
+$input-border-color: rgba(0,0,0,.15) !default;
+
+$custom-control-gutter:   24px !default;
+$custom-control-spacer-x: 16px !default;
+$custom-control-spacer-y: 4px !default;
+
+$custom-control-indicator-size:       16px !default;
+$custom-control-indicator-bg:         #ddd !default;
+$custom-control-indicator-bg-size:    50% 50% !default;
+$custom-control-indicator-box-shadow: inset 0 4px 4px rgba(0,0,0,.1) !default;
+
+$custom-control-disabled-cursor:             $cursor-disabled !default;
+$custom-control-disabled-indicator-bg:       #eee !default;
+$custom-control-disabled-description-color:  #767676 !default;
+
+$custom-control-checked-indicator-color:      $light-color !default;
+$custom-control-checked-indicator-bg:         $secondary-color !default;
+$custom-control-checked-indicator-box-shadow: none !default;
+
+$custom-control-focus-indicator-box-shadow: inset 0 1px 1px rgba($secondary-color, 0.075), 0 0 6px $secondary-color !default;
+
+$custom-control-active-indicator-color:      $light-color !default;
+$custom-control-active-indicator-bg:         #84c6ff !default;
+$custom-control-active-indicator-box-shadow: none !default;
+
+$custom-checkbox-radius: $border-radius !default;
+$custom-checkbox-checked-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E") !default;
+$custom-checkbox-indeterminate-bg: #0074d9 !default;
+$custom-checkbox-indeterminate-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E") !default;
+$custom-checkbox-indeterminate-box-shadow: none !default;
+
+$custom-radio-radius: 50% !default;
+$custom-radio-checked-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E") !default;
+
+$custom-select-padding-x:          12px  !default;
+$custom-select-padding-y:          6px !default;
+$custom-select-indicator-padding:  16px !default; // Extra padding to account for the presence of the background-image based indicator
+$custom-select-color:          $input-color !default;
+$custom-select-disabled-color: $gray-light !default;
+$custom-select-bg:            $light-color !default;
+$custom-select-disabled-bg:   $gray-lighter !default;
+$custom-select-bg-size:       8px 10px !default; // In pixels because image dimensions
+$custom-select-border-width:  $input-btn-border-width !default;
+$custom-select-border-color:  $input-border-color !default;
+$custom-select-border-radius: $border-radius !default;
+
+$custom-select-focus-border-color: #51a7e8 !default;
+$custom-select-focus-box-shadow:   inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 5px rgba(81, 167, 232, .5) !default;
+
+$custom-select-sm-padding-y: 3.2px !default;
+$custom-select-sm-font-size: 75% !default;
+
+$custom-file-height:           40px !default;
+$custom-file-width:            224px !default;
+$custom-file-focus-box-shadow: 0 0 0 1.2px $light-color, 0 0 0 3.2px #0074d9 !default;
+
+$custom-file-padding-x:     8px !default;
+$custom-file-padding-y:     16px !default;
+$custom-file-line-height:   1.5 !default;
+$custom-file-color:         #555 !default;
+$custom-file-bg:            $light-color !default;
+$custom-file-border-width:  $border-width !default;
+$custom-file-border-color:  #ddd !default;
+$custom-file-border-radius: $border-radius !default;
+$custom-file-box-shadow:    inset 0 3.2px 6.4px rgba(0,0,0,.05) !default;
+$custom-file-button-color:  $custom-file-color !default;
+$custom-file-button-bg:     #eee !default;
+$custom-file-text: (
+        placeholder: (
+                en: "Choose file..."
+        ),
+        button-label: (
+                en: "Browse"
+        )
+) !default;
+
+// Form validation icons
+$form-icon-success: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%235cb85c' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3E%3C/svg%3E") !default;
+$form-icon-warning: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23f0ad4e' d='M4.4 5.324h-.8v-2.46h.8zm0 1.42h-.8V5.89h.8zM3.76.63L.04 7.075c-.115.2.016.425.26.426h7.397c.242 0 .372-.226.258-.426C6.726 4.924 5.47 2.79 4.253.63c-.113-.174-.39-.174-.494 0z'/%3E%3C/svg%3E") !default;
+$form-icon-danger: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d9534f' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E") !default;
+

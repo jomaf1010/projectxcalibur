@@ -1,0 +1,77 @@
+.weather {
+
+
+    .summary {
+
+        .summary-header {
+            background-color: rgba(0,0,0,.3);
+        }
+
+        height: 400px;
+        background-size: cover;
+        text-shadow: 1px 1px 2px rgba(0,0,0,1);
+    }
+
+    .time-wrapper {
+
+        background-color: rgba(0,0,0,.3);
+        h1 {
+            display: inline-block;
+            font-size: 6rem;
+            top: -14px;
+            position: relative;
+        }
+        .meridian {
+            font-size: 7rem;
+            top: -6px;
+            position: relative;
+        }
+
+    }
+
+    .widget-clock {
+        width: 70px;
+        display: inline-block;
+        padding: 0;
+        margin-top: 17px;
+    }
+
+
+    .temperature {
+
+        h1 {
+            font-size: 5em;
+            display: inline-block;
+            margin-left: -20px;
+        }
+
+        .thermometer {
+            font-size: 5rem;
+            margin-left: -10px;
+        }
+
+        .deg {
+            font-size: 5rem;
+            margin-left: -5px;
+            position: relative;
+            top: -15px;
+        }
+
+        .indicator {
+            font-size: 4rem;
+            position: relative;
+            margin-left: -25px;
+        }
+    }
+
+    .date {
+        .full-date {
+            font-size: 2.5rem;
+            margin-top: 25px;
+        }
+        .day {
+            font-size: 1.5rem;
+            margin-top: -10px;
+        }
+    }
+}
