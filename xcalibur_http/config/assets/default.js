@@ -4,8 +4,8 @@ module.exports = {
     client: {
         lib: {
             css: [
-                'public/lib/bootstrap/dist/css/bootstrap.css',
-                'public/lib/bootstrap/dist/css/bootstrap-theme.css'
+                // 'public/lib/bootstrap/dist/css/bootstrap.css',
+                // 'public/lib/bootstrap/dist/css/bootstrap-theme.css'
             ],
             js: [
                 'public/lib/angular/angular.js',
@@ -27,7 +27,9 @@ module.exports = {
             'modules/*/client/less/*.less'
         ],
         sass: [
-            'modules/*/client/scss/*.scss'
+            'modules/*/client/scss/*.scss',
+            'assets/sass/**/*.scss',
+            'assets/sass/*.scss'
         ],
         js: [
             'modules/core/client/app/config.js',

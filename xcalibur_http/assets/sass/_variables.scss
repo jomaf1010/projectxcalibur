@@ -38,6 +38,7 @@ $gray-light                 : #818a91 !default;
 $gray-lighter               : #eceeef !default;
 $gray-lightest              : #f7f7f9 !default;
 
+
 $brand-primary              : $primary-color !default;
 $brand-secondary            : $secondary-color !default;
 $brand-success              : #5cb85c !default;
@@ -50,10 +51,10 @@ $contrasted-light-default   : $gray-lightest !default; // light - textcolor ($bo
 
 // BODY
 //
-//$body-bg                    : $gray-lightest !default;
-$body-bg                    : #263238 !default;
+$body-bg                    : $gray-lightest !default;
+//$body-bg                    : #263238 !default;
 $body-color                 : $gray-dark !default; // BS4
-$text-color                 : $gray-lightest !default;
+$text-color                 : $gray-dark !default;
 $heading-color              : #1d2939 !default;
 
 // LINK
